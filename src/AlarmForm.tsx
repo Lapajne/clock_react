@@ -2,7 +2,6 @@ export default function AlarmForm({alarmTime, changeAlarmTime}: {alarmTime: stri
 
   const handleTimeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     changeAlarmTime(event.target.value);
-    console.log("Alarm set for:", event.target.value);
   };  
  
   return (

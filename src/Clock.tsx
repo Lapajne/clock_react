@@ -11,7 +11,6 @@ export default function Clock({alarmTime}: {alarmTime: string;}): JSX.Element {
 
       var currentHoursMinutes: string = currentTime.substring(0, 5);
 
-      console.log(currentHoursMinutes, alarmTime);
       if (currentHoursMinutes === alarmTime) {
         alert("ALARM!!!");
         alarmTime = ""; // Reset alarm time after alert
